@@ -1,0 +1,82 @@
+<!--
+  MODELO LINK IN BIO - PARA PEGAR EN UN BLOQUE "CÓDIGO PERSONALIZADO" DE SYSTEME.IO
+  Todo está en un solo bloque. Solo tienes que cambiar lo que pone "CAMBIA AQUÍ".
+  Los textos, nombres y enlaces son de ejemplo (inventados).
+-->
+<style>
+  .lib-wrap{
+    --verde:#2f6f5e; --verde-osc:#1f4d41; --crema:#f6f1e7; --salvia:#dfe9df; --tierra:#b8865b; --texto:#26332f;
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--texto);
+    background:linear-gradient(180deg,var(--salvia) 0%,var(--crema) 55%);
+    padding:32px 12px 40px; box-sizing:border-box; width:100%;
+  }
+  .lib-wrap *{box-sizing:border-box}
+  .lib-card{max-width:440px; margin:0 auto; text-align:center}
+  .lib-foto{width:112px;height:112px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 6px 18px rgba(31,77,65,.2);background:#fff}
+  .lib-nombre{font-size:26px;font-weight:700;margin:14px 0 4px;color:var(--verde-osc)}
+  .lib-frase{font-size:16px;line-height:1.45;margin:0 auto 18px;max-width:340px}
+  .lib-redes{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 4px;margin-bottom:26px}
+  .lib-redes a{display:flex;flex-direction:column;align-items:center;gap:6px;width:66px;text-decoration:none;color:var(--verde-osc);font-size:11.5px;font-weight:600}
+  .lib-redes .ico{width:44px;height:44px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .15s}
+  .lib-redes a:hover .ico{transform:translateY(-2px)}
+  .lib-redes svg{width:22px;height:22px;stroke:var(--verde);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .lib-titulo{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--tierra);font-weight:700;margin:26px 0 10px}
+  .lib-btn{display:block;text-decoration:none;padding:16px 18px;margin:0 0 12px;border-radius:14px;font-size:16px;font-weight:600;line-height:1.3;
+    background:#fff;color:var(--verde-osc);border:1.5px solid var(--verde);transition:transform .15s,box-shadow .15s}
+  .lib-btn:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(31,77,65,.15)}
+  .lib-btn small{display:block;font-weight:400;font-size:13px;opacity:.8;margin-top:2px}
+  .lib-btn.principal{background:var(--verde);color:#fff;border-color:var(--verde);font-size:17px;padding:18px}
+  .lib-btn.principal small{opacity:.9}
+  .lib-pie{margin-top:30px;font-size:12px;line-height:1.5;color:#5b6b66}
+  .lib-pie a{color:#5b6b66}
+</style>
+
+<div class="lib-wrap">
+  <div class="lib-card">
+
+    <!-- CAMBIA AQUÍ: tu foto (sube la imagen a Systeme.io y pega su enlace en src) -->
+    <img class="lib-foto" alt="Foto de perfil"
+      src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='224' height='224'><rect width='224' height='224' fill='%232f6f5e'/><text x='50%25' y='58%25' font-size='90' fill='white' text-anchor='middle' font-family='Arial'>M</text></svg>">
+
+    <!-- CAMBIA AQUÍ: tu nombre y tu frase -->
+    <h1 class="lib-nombre">María Ejemplo</h1>
+    <p class="lib-frase">Te acompaño a crear rutinas y un hogar más natural, paso a paso 🌿</p>
+
+    <!-- CAMBIA AQUÍ: los enlaces de tus redes (borra el icono que no uses) -->
+    <div class="lib-redes">
+      <a href="https://www.instagram.com/TU_USUARIO" aria-label="Instagram" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span><span>Instagram</span></a>
+      <a href="https://www.tiktok.com/@TU_USUARIO" aria-label="TikTok" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.1 4.3 5 4.6"/></svg></span><span>TikTok</span></a>
+      <a href="https://www.facebook.com/TU_USUARIO" aria-label="Facebook" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></span><span>Facebook</span></a>
+      <a href="https://www.youtube.com/@TU_USUARIO" aria-label="YouTube" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg></span><span>YouTube</span></a>
+      <a href="https://wa.me/34600000000" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.3 18.8L4 20z"/><path d="M9 9c0 3 3 6 6 6l1.2-1.5-2-1-1 .6c-.8-.4-1.6-1.2-2-2l.6-1-1-2L9 9z"/></svg></span><span>WhatsApp</span></a>
+    </div>
+
+    <!-- BOTÓN PRINCIPAL. Lleva directo a la guía -->
+    <a class="lib-btn principal" href="https://guia-bienestar.autostudio26.com" target="_blank" rel="noopener">
+      📲 Accede gratis a mi guía práctica
+      <small>Ábrela gratis desde tu móvil</small>
+    </a>
+
+    <div class="lib-titulo">Mi guía y recursos</div>
+    <!-- CAMBIA AQUÍ: enlaces a tus recursos extra (si no tienes más, borra estos tres botones) -->
+    <a class="lib-btn" href="#RECURSO_1">Combinaciones de productos<small>Ideas para sacarles más partido</small></a>
+    <a class="lib-btn" href="#RECURSO_2">Guía de limpieza del hogar<small>Rutinas sencillas, día a día</small></a>
+    <a class="lib-btn" href="#RECURSO_3">Cuidado personal en 5 pasos<small>Tu rutina fácil y rápida</small></a>
+
+    <div class="lib-titulo">Conóceme</div>
+    <!-- CAMBIA AQUÍ: tu enlace de Melaleuca y tu WhatsApp -->
+    <a class="lib-btn" href="#TU_ENLACE_MELALEUCA" target="_blank" rel="noopener">Conoce los productos<small>Descubre el catálogo</small></a>
+    <a class="lib-btn" href="https://wa.me/34600000000" target="_blank" rel="noopener">Escríbeme por WhatsApp<small>Resuelvo tus dudas</small></a>
+
+    <p class="lib-pie">
+      Contenido informativo y de estilo de vida. No sustituye el consejo profesional.<br>
+      <!-- CAMBIA AQUÍ: enlaces a tu aviso legal y política de privacidad -->
+      <a href="#PRIVACIDAD">Política de privacidad</a> · <a href="#AVISO_LEGAL">Aviso legal</a>
+    </p>
+  </div>
+</div>
